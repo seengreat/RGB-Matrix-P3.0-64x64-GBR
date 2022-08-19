@@ -103,7 +103,7 @@ The wiring pins definitions of signal input for Raspberry Pi and RGB LED Matri
 |CLK	|Clock input	|17	       |P0	                |LAT	|Latch pin	                |4	|P7|
 |OE	|Output enable	|18	       |P1	                |GND	|Ground	                |GND	|GND|
 
-Modify lines 45 to 49 in the rpi-rgb-led-matrix/lib/hardware-mapping.c file to:<br> 
+Modify lines 44 to 49 in the rpi-rgb-led-matrix/lib/hardware-mapping.c file to:<br> 
     .p0_r1         = GPIO_BIT(27),  /*  Not on RPi1, Rev1; use "regular-pi1" instead*/<br> 
     .p0_g1         = GPIO_BIT(7),  /* masks:  SPI0_CE1  */<br> 
     .p0_b1         = GPIO_BIT(11),   /* masks: SPI0_SCKL */<br> 
@@ -111,7 +111,7 @@ Modify lines 45 to 49 in the rpi-rgb-led-matrix/lib/hardware-mapping.c file to:<
     .p0_g2         = GPIO_BIT(10),    /* masks: SPI0_MOSI  */<br> 
     .p0_b2         = GPIO_BIT(8),   /* masks: SPI0_CE0  */<br> 
 Then recompile.<br> 
-It can be seen simply that the pin numbers of g1 and b1, g2 and b2 are actually swapped.We use the "regular" wiring method, if the user involves other wiring methods, you can refer to this modification method<br> 
+It can be easily seen that the pin number of r and g and b has actually been redefined.We use the "regular" wiring method, if the user involves other wiring methods, you can refer to this modification method<br> 
 ## 2.2.2、Usage of demo for Rasperry Pi Pico
 The wiring pins definitions of signal input for Pico and RGB LED Matrix Panel as following:<br> 
 |Label	|Pins Description	|Pico Pins	|Label	|Pin Description	|Pico Pins|
