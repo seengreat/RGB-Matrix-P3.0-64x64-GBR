@@ -1,4 +1,4 @@
-RGB-Matrix-P3.0-64x64 from seengreat:www.seengreat.com
+RGB-Matrix-P3.0-64x64-GBR from seengreat:www.seengreat.com
   ======================================
 # Instructions
 ## 1.1、verview
